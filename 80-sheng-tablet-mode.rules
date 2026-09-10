@@ -1,0 +1,4 @@
+# Hide the physical gpio-keys hall sensor from libinput so mutter does not
+# interpret the cover/hall gesture as a locked "laptop" posture. The virtual
+# fake-tablet-mode device takes over SW_TABLET_MODE reporting.
+SUBSYSTEM=="input", ATTRS{name}=="gpio-keys", ENV{ID_INPUT_SWITCH}=""

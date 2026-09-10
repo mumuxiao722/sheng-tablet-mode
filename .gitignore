@@ -1,0 +1,6 @@
+# Build artifacts (published via GitHub Releases instead)
+/*.deb
+/*.rpm
+
+# dpkg staging
+deb/root/

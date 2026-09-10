@@ -1,0 +1,14 @@
+# Present the virtual tablet-mode switch before the graphical session starts
+[Unit]
+Description=Fake tablet-mode switch for GNOME auto-rotation (Xiaomi Pad 6S Pro)
+After=systemd-modules-load.service
+Before=gdm.service
+
+[Service]
+Type=simple
+ExecStart=/usr/lib/sheng-tablet-mode/fake-tablet-mode
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
