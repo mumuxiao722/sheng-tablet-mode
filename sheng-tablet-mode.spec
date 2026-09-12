@@ -43,8 +43,8 @@ desktop is selected.
 tar -xf %{SOURCE0}
 
 %install
-install -d %{buildroot}/usr/lib/sheng-tablet-mode
-install -m 755 fake-tablet-mode %{buildroot}/usr/lib/sheng-tablet-mode/fake-tablet-mode
+install -d %{buildroot}/usr/libexec/sheng-tablet-mode
+install -m 755 fake-tablet-mode %{buildroot}/usr/libexec/sheng-tablet-mode/fake-tablet-mode
 
 install -d %{buildroot}%{_unitdir}
 install -m 644 fake-tablet-mode.service %{buildroot}%{_unitdir}/
@@ -68,7 +68,7 @@ install -m 644 sheng-tablet-mode.conf %{buildroot}/usr/lib/modules-load.d/sheng-
 %systemd_postun_with_restart fake-tablet-mode.service
 
 %files
-/usr/lib/sheng-tablet-mode/fake-tablet-mode
+/usr/libexec/sheng-tablet-mode/fake-tablet-mode
 %{_unitdir}/fake-tablet-mode.service
 /usr/lib/udev/rules.d/80-sheng-tablet-mode.rules
 /usr/lib/systemd/logind.conf.d/10-sheng-tablet-mode.conf
