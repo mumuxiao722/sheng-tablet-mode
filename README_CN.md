@@ -24,7 +24,7 @@
 
 | 文件                           | 安装位置                                      |
 | ------------------------------ | --------------------------------------------- |
-| `fake-tablet-mode`             | `/usr/lib/sheng-tablet-mode/fake-tablet-mode` |
+| `fake-tablet-mode`             | `/usr/libexec/sheng-tablet-mode/fake-tablet-mode` |
 | `fake-tablet-mode.service`     | systemd 单元，`Before=gdm.service`            |
 | `80-sheng-tablet-mode.rules`   | `/usr/lib/udev/rules.d/`                      |
 | `10-sheng-tablet-mode.conf`    | `/usr/lib/systemd/logind.conf.d/`（`HandleLidSwitch=ignore`） |
