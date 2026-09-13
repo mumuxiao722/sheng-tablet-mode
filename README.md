@@ -29,7 +29,7 @@ auto-rotation. This repository provides the source files for a small
 
 | File                        | Installed to                                  |
 | --------------------------- | --------------------------------------------- |
-| `fake-tablet-mode`          | `/usr/libexec/sheng-tablet-mode/fake-tablet-mode` |
+| `fake-tablet-mode`          | `/usr/libexec/fake-tablet-mode`               |
 | `fake-tablet-mode.service`  | systemd unit, `Before=gdm.service`            |
 | `80-sheng-tablet-mode.rules`| `/usr/lib/udev/rules.d/`                      |
 | `10-sheng-tablet-mode.conf` | `/usr/lib/systemd/logind.conf.d/` (`HandleLidSwitch=ignore`) |

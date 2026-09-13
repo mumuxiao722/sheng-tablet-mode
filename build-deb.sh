@@ -13,8 +13,7 @@ STAGE="$HERE/deb/root"
 
 rm -rf "$STAGE"
 
-mkdir -p "$STAGE"/usr/libexec/sheng-tablet-mode
-install -m 755 "$REPO_ROOT/fake-tablet-mode" "$STAGE/usr/libexec/sheng-tablet-mode/fake-tablet-mode"
+install -D -m 755 "$REPO_ROOT/fake-tablet-mode" "$STAGE/usr/libexec/fake-tablet-mode"
 
 install -D -m 644 "$REPO_ROOT/fake-tablet-mode.service" "$STAGE/lib/systemd/system/fake-tablet-mode.service"
 install -D -m 644 "$REPO_ROOT/80-sheng-tablet-mode.rules" "$STAGE/lib/udev/rules.d/80-sheng-tablet-mode.rules"

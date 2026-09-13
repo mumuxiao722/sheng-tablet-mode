@@ -6,7 +6,7 @@ Before=gdm.service
 
 [Service]
 Type=simple
-ExecStart=/usr/libexec/sheng-tablet-mode/fake-tablet-mode
+ExecStart=/usr/libexec/fake-tablet-mode
 Restart=always
 RestartSec=3
 
